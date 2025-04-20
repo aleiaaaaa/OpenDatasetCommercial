@@ -1,42 +1,39 @@
-<<<<<<< HEAD
-# Open_Dataset_commercial
+# 淘宝双11数据文件介绍
 
-#### 介绍
-本资源文件提供了淘宝双11大数据分析的数据准备篇所需的全部数据
+本资源文件提供了淘宝双11的全部数据和相关工具。通过本资源文件，用户可以获取到淘宝双11前6个月（包含双11）的交易数据，这些数据包括用户行为日志、回头客训练集和测试集等。
 
-#### 软件架构
-软件架构说明
+## 数据内容
 
+本资源文件包含以下主要数据集：
+1. **用户行为日志文件（user_log.csv）**：记录了用户的交易行为，包括点击、加入购物车、购买和关注商品等。
+2. **回头客训练集（train.csv）**：用于训练模型的数据集，包含用户是否为回头客的标签。
+3. **回头客测试集（test.csv）**：用于测试模型的数据集，包含需要预测的用户是否为回头客的标签。
 
-#### 安装教程
+## 数据字段说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+### user_log.csv 文件内容含义
+- **user_id**：买家ID
+- **item_id**：商品ID
+- **cat_id**：商品类别ID
+- **merchant_id**：卖家ID
+- **brand_id**：品牌ID
+- **month**：交易时间：月
+- **day**：交易时间：日
+- **action**：行为类型（0表示点击，1表示加入购物车，2表示购买，3表示关注商品）
+- **age_range**：卖家年龄分段
+- **gender**：性别（0表示女性，1表示男性，2和NULL表示未知）
+- **province**：收货地址：省份
 
-#### 使用说明
+### train.csv 和 test.csv 文件内容含义
+- **user_id**：买家ID
+- **age_range**：买家年龄分段
+- **gender**：性别（0表示女性，1表示男性，2和NULL表示未知）
+- **merchant_id**：商家ID
+- **label**：是否是回头客（0表示不是回头客，1表示回头客，-1表示超出预测范围，NULL表示需要预测的值）
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+## 注意事项
 
-#### 参与贡献
+- 本资源文件仅供学习和研究使用，请勿用于商业用途。
+- 数据量较大，建议在具备一定硬件条件的机器上进行处理。
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
-=======
-# OpenDatasetCommercial
-本资源文件提供了淘宝双11大数据分析的全部数据
->>>>>>> ab0fa2d12e2f4a0d1f0e303a8cd15cc57d262682
+通过本资源文件，用户可以深入了解淘宝双11的交易数据，为电商行业的数据分析提供有力支持。
