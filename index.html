@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数据集索引</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .file-info {
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>数据集索引</h1>
+    <p>以下是可用的数据集列表：</p>
+    <ul>
+        <li>
+            <a href="user_log/index.html">用户日志数据 </a>
+            <div class="file-info">字段包括：user_id, item_id, cat_id, merchant_id, brand_id, month,
+                day, action, age_range, gender, province
+            </div>
+        </li>
+        <li>
+            <a href="train/index.html">回头客训练集 </a>
+            <div class="file-info">字段包括：user_id,  age_range, gender, merchant_id, label
+            </div>
+        </li>
+        <li>
+            <a href="test/index.html">回头客测试集 </a>
+            <div class="file-info">字段包括：user_id,  age_range, gender, merchant_id, labele
+            </div>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
